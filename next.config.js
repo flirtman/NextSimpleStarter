@@ -1,6 +1,8 @@
-const withOffline = require('next-offline')
+const withOffline = require('next-offline');
+const { i18n } = require('./next-i18next.config');
 
 module.exports = withOffline({
+	i18n,
 	workboxOpts: {
 		swDest: 'static/service-worker.js',
 		runtimeCaching: [
@@ -23,4 +25,4 @@ module.exports = withOffline({
 			},
 		],
 	},
-})
+});

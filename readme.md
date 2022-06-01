@@ -6,7 +6,9 @@
 
 ## Getting Started
 
-- First, run the development server with `npm run dev`.
+- nvm use 18.2.0
+- yarn install
+- First, run the development server with `yarn dev`.
 - Navigate to [http://localhost:3000](http://localhost:3000) on your browser.
 - Start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
@@ -45,3 +47,6 @@ I'm open to contributions & suggestions in making this a lot better :hand:
 ## License
 
 MIT
+
+## NODE Version
+Tested on node 18.2.0

@@ -37,7 +37,7 @@ const HomePage = () => {
 				/>
 			</Head>
 			<TopNav/>
-			<h1>{t('h1')}</h1>
+			<h1>About Page</h1>
 			<p>paragraph goes here</p>
 			<p>Chosen lang: {locale}</p>
 			<p>{t('common:title')}</p>
@@ -45,6 +45,13 @@ const HomePage = () => {
 		</div>
 	);
 };
+
+
+// export const getStaticProps = async ({ locales }) => ({
+// 	props: {
+// 		...await serverSideTranslations(locales, ['common'], nextI18NextConfig)
+// 	}
+// });
 
 export async function getStaticProps({ locale }) {
 	return {

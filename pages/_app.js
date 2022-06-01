@@ -4,6 +4,8 @@ import Head from 'next/head'
 import { createMuiTheme } from '@material-ui/core/styles'
 import { ThemeProvider } from '@material-ui/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
+import { appWithTranslation } from 'next-i18next';
+import nextI18NextConfig from '../next-i18next.config.js'
 
 const theme = createMuiTheme({
 	palette: {
@@ -45,4 +47,4 @@ const MyApp = ({ Component, pageProps }) => {
 	)
 }
 
-export default MyApp
+export default appWithTranslation(MyApp, nextI18NextConfig)
